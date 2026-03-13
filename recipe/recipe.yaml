@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: redcamel
-  version: 0.1.3
+  version: "0.1.8"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/redcamel-${{ version }}.tar.gz
-  sha256: 0cd74b4e53cc4076f52401f28b6f0fa60c26da4c1bc1177424e11025c9218f76
+  sha256: 12f26ebaf20423c1840bca99681735e9fe4f68ad678bbd39eeef4785ba99aa20
 
 build:
   number: 0
@@ -55,4 +55,4 @@ about:
 
 extra:
   recipe-maintainers:
-  - HLinde
+    - HLinde
