@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: redcamel
-  version: "0.1.4"
+  version: "0.1.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/redcamel-${{ version }}.tar.gz
-  sha256: 7bd575762dec029f644311ef091c66e79efb9b51465152e9dc92d4376530148b
+  sha256: cd48206a3ee7bd5b3a5b261fdace223e63de28b93b7e42986367ec1d2cf2b7b6
 
 build:
   number: 0
@@ -23,7 +23,7 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatchling
+    - uv-build >=0.8.13,<0.9.0
     - pip
   run:
     - python >=${{ python_min }}
@@ -52,7 +52,10 @@ about:
   repository: https://codeberg.org/FlashREMI/RedCamel
   summary: GUI tool to simulate Reaction Microscope detector images.
   license: GPL-3.0-or-later
-  license_file: LICENSES/GPL-3.0-or-later.txt
+  license_file:
+  - LICENSES/
+  - "REUSE.toml"
+  - "CITATION.cff"
 
 extra:
   recipe-maintainers:
