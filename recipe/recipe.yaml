@@ -52,7 +52,10 @@ about:
   repository: https://codeberg.org/FlashREMI/RedCamel
   summary: GUI tool to simulate Reaction Microscope detector images.
   license: GPL-3.0-or-later
-  license_file: LICENSES/
+  license_file:
+  - LICENSES/
+  - "REUSE.toml"
+  - "CITATION.cff"
 
 extra:
   recipe-maintainers:
