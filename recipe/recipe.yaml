@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: redcamel
-  version: "0.1.6"
+  version: "0.1.7"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/redcamel-${{ version }}.tar.gz
-  sha256: 0e31971367aff6269acf546c5e453138930e67da2ffd9d9c61d502e03ab450b2
+  sha256: 1f292762cf9ba730aa0d53346dd9feba17a3cff22dcb8c267cc5d17558989066
 
 build:
   number: 0
@@ -29,9 +29,10 @@ requirements:
     - python >=${{ python_min }}
     - chemformula >=1.2
     - python-graphviz >=0.20
-    - ipywidgets >=8
-    - matplotlib-base >=3.7
     - h5py >=3.11
+    - ipywidgets >=8
+    - ipympl >=0.9
+    - matplotlib-base >=3.7
     - numba >=0.58
     - numpy >=1.2
     - plopp >=23
