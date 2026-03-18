@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: redcamel
-  version: "0.1.5"
+  version: "0.1.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/redcamel-${{ version }}.tar.gz
-  sha256: cd48206a3ee7bd5b3a5b261fdace223e63de28b93b7e42986367ec1d2cf2b7b6
+  sha256: 0e31971367aff6269acf546c5e453138930e67da2ffd9d9c61d502e03ab450b2
 
 build:
   number: 0
