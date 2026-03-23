@@ -13,12 +13,12 @@ source:
   sha256: 12f26ebaf20423c1840bca99681735e9fe4f68ad678bbd39eeef4785ba99aa20
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
-      - redcamel = redcamel:main
+      - redcamel = redcamel.remi_gui:main
 
 requirements:
   host:
