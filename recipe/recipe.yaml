@@ -2,8 +2,7 @@ schema_version: 1
 
 context:
   name: redcamel
-  version: "0.1.9"
-  python_min: "3.11"
+  version: "0.1.10"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/redcamel-${{ version }}.tar.gz
-  sha256: b13d064904deddbaf35b8028f6e60d01a876de6274563f3e6c9f8d697f9fb1dc
+  sha256: 4319b544f57186ede64a2fd0113405a4af1b2ec6cc27fc1d42ab747014727470
 
 build:
   number: 0
@@ -37,8 +36,8 @@ requirements:
     - matplotlib-base >=3.7
     - numba >=0.65
     - numpy >=1.2
-    - plopp >=25.11,<26
-    - scipp >=25.11,<26
+    - plopp >=26.3, <27
+    - scipp >=25.12, <27
     - scipy >=1.17,<2
 
 tests:
